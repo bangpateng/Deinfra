@@ -9,6 +9,14 @@
 
 # Install Otomatis
 
+```
+wget -qO deinfra.sh https://raw.githubusercontent.com/bangpateng/Deinfra/main/deinfra.sh && chmod +x deinfra.sh && ./deinfra.sh
+```
+
+# Konfirmasi Bot Telegramnya
+
+Link : https://t.me/thepowerio_bot
+
 
 
 
