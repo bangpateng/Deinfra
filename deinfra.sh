@@ -21,20 +21,9 @@ echo "======================================="
 
 sleep 2
 
-# set vars
-if [ ! $IP ]; then
-	read -p "Masukan IP ADDRESS VPS Kalian: " IP
-	echo 'export IP='$IP >> $HOME/.bash_profile
-fi
-
-echo '================================================='
-echo -e "Your IP Address: \e[1m\e[32m$IP\e[0m"
-echo '================================================='
-sleep 2
-
 echo -e "\e[1m\e[32m1. Updating packages... \e[0m" && sleep 1
 # update
-sudo apt update -y && sudo apt install apt-transport-https ca-certificates curl software-properties-common -y && curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add - && sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable" && sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin && sudo apt install docker-compose
+sudo apt update -y && apt instal jq && sudo apt install apt-transport-https ca-certificates curl software-properties-common -y && curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add - && sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable" && sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin && sudo apt install docker-compose
 
 echo -e "\e[1m\e[32m2. Pull Docker... \e[0m" && sleep 1
 # pull
@@ -43,8 +32,5 @@ docker pull thepowerio/tpnode
 echo -e "\e[1m\e[32m3. Run Docker... \e[0m" && sleep 1
 # Run Docker
 docker run -d -p 44000:44000 --name tpnode thepowerio/tpnode
-
-echo -e "\e[1m\e[32m4. Updating packages... \e[0m" && sleep 1
-curl http://$IP:44000/api/node/status | jq
 
 echo '=============== SETUP FINISH BANG EASY BANGET KAN ===================' && sleep 1
