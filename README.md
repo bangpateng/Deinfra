@@ -13,7 +13,7 @@ Webiste Official :
 > [Website](https://thepower.io/)
 
 Docs :
-> [Docs Official](https://docs.thepower.io/docs/Maintain/testnet-start/)
+> [Docs Official](https://doc.thepower.io/docs/Maintain/testnet-start/)
 
 ## Perangkat Minimal
 
