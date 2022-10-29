@@ -7,6 +7,28 @@
   <img height="250" height="250" src="https://user-images.githubusercontent.com/38981255/198820722-9f95bc3c-2963-4bda-8886-33c6ce89b13b.PNG">
 </p>
 
+# DEINFRA TESTNET INCENTIVIZED
+
+Webiste Official :
+> [Website](https://thepower.io/)
+
+Docs :
+> [Docs Official](https://doc.thepower.io/docs/Maintain/testnet-start/)
+
+## Perangkat Minimal
+
+|  Komponen |  Persyaratan Minimum |
+| ------------ | ------------ |
+| CPU  | Intel 2 Core  |
+| RAM | 2 GB  |
+| Penyimpanan  | 20 HDD/SSD |
+
+## Perangkat Lunak
+
+|Komponen | Persyaratan Minimum |
+| ------------ | ------------ |
+| OS |  Ubuntu 18.04 atau lebih tinggi | 
+
 # Install Otomatis
 
 ```
